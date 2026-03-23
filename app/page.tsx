@@ -20,8 +20,8 @@ async function ProductList() {
 
 export default function Home() {
   return (
-    <main>
-      <h1>Products</h1>      
+    <main className='p-8'>
+      <h1 className='text-3xl font-bold text-blue-600'>Products</h1>      
       <Suspense fallback={<p>Loading products...</p>}>
         <ProductList />            
       </Suspense>
